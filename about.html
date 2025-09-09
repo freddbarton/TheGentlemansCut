@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TheGentlemansCut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>TheGentlemansCut</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">About TheGentlemansCut</h1>
+                <p class="page-subtitle">Where tradition meets modern excellence</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-section">
+                    <h2>Our Story</h2>
+                    <p>TheGentlemansCut was founded with a simple mission: to provide exceptional barber services that honor traditional craftsmanship while embracing modern techniques. We believe that every gentleman deserves a grooming experience that not only looks great but feels great too.</p>
+                    
+                    <p>Our skilled barbers combine years of experience with a passion for their craft, ensuring that each client receives personalized attention and leaves feeling confident and refreshed.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Precision Haircuts</h3>
+                        <p>Expert cuts tailored to your face shape and personal style, using both classic and contemporary techniques.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Beard Trims & Styling</h3>
+                        <p>Professional beard grooming services to keep your facial hair looking sharp and well-maintained.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Facial Treatments</h3>
+                        <p>Rejuvenating facial treatments designed specifically for men, promoting healthy skin and relaxation.</p>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Commitment</h2>
+                    <p>We are committed to providing a premium experience in a comfortable, welcoming environment. Our attention to detail, use of high-quality products, and dedication to customer satisfaction sets us apart.</p>
+                    
+                    <p>Whether you are looking for a quick trim or a complete grooming transformation, our team is here to help you look and feel your best.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TheGentlemansCut</h3>
+                    <p>Premium barber services for the modern gentleman</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Haircuts & Styling</li>
+                        <li>Beard Trims</li>
+                        <li>Facial Treatments</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TheGentlemansCut. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
